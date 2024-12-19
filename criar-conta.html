@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta</title>
+
+    <style>
+        body{
+            background-color: rgba(0 , 0 , 0 , .7);
+            margin-top: 150px;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+        h1:hover{
+            cursor: default;
+        }
+        .menu{
+            width: 50%;
+            margin: auto;
+        }
+        .input{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        input{
+            box-sizing: border-box;
+            width: 100%;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        button{
+            background-color:  rgb(94, 94, 238);
+            color: white;
+            width: 100%;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover{
+            cursor: pointer;
+            border: 2px solid black;
+        }
+        .check{
+            width: 15px;
+            display: flex;
+            margin: auto;
+        }
+        label{
+            color: white;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <h1>Criar conta</h1>
+        </div>
+    </header>
+    <main class="menu">
+        <div class="input">
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="Sobrenome">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Senha">
+            <button>Criar Conta</button>
+        </div>
+    </main>
+    <footer>
+        <input class="check" required type="checkbox">
+        <label>Aceite os termos</label>
+    </footer>
+</body>
+</html>

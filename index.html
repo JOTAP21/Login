@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+
+    <style>
+        body{
+            background-color: rgba(0 , 0 , 0 , .7);
+            margin-top: 150px;
+        }
+        header{
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 400px; /* Ajuste a largura máxima conforme necessário */
+            margin: 0 auto;
+          }
+        h1:hover{
+            cursor: default;
+        }
+        .input{
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .email{
+            box-sizing: border-box;
+            width: 100%;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+        }
+        .email:hover{
+            border: 1px solid black;
+        }
+        .senha{
+            width: 100%;
+            box-sizing: border-box;
+            height: 30px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .senha:hover{
+            border: 1px solid black;
+        }
+        .texto{
+            display: flex;
+            justify-content: end;
+            color: white;
+        }
+        .texto:hover{
+            cursor: default;
+        }
+        .link{
+            color: blue;
+            background-color: white;
+            border-radius: 5px;
+        }
+        button{
+            width: 100%;
+            height: 30px;
+            color: white;
+            background-color: rgb(94, 94, 238);
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover{
+            cursor: pointer;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+    </header>
+    <div class="input">
+        <main>
+            <div class="login">
+                    <input class="email" type="email" placeholder="Email">
+                    <input class="senha" type="password" placeholder="Senha">
+                    <p class="texto">Não tem conta?   <a href="criar-conta.html" target="_blank" class="link">Crie uma!</a></p>
+                    <button>Entrar</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
